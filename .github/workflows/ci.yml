@@ -30,7 +30,7 @@ jobs:
 
     - name: 发布
       uses: softprops/action-gh-release@v2
-      if: github.ref_type == 'tag'
       with:
+        tag_name: v1.0.8
         files: |
           app/build/outputs/apk/ci/**/*.*
